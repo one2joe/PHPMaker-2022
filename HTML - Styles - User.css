@@ -13,6 +13,7 @@
   text-align: right;
 }
 
+/* ทำให้ปุ่ม paging สั้นกระชับในมือถือ */
 @media (min-width: 576px) {
   input[type=text]:not([size]):not([name=pageno]):not(.cke_dialog_ui_input_text):not(.form-control-plaintext), input[type=password]:not([size]) {
     min-width: unset !important;
@@ -29,6 +30,15 @@ input.ew-page-no {
   width: 30px !important;
 }
 
+/* ในหน้าจอมือถือ จัดระยะเมื่อปุ่มขึ้นบรรทัดใหม่ */
+.ew-grid-upper-panel, .ew-grid-lower-panel {
+  padding: 0px !important;
+}
+.ew-pager-form, .ew-list-other-options, .ew-add-edit-option, .ew-detail-option, .ew-action-option {
+  margin: 5px;
+}
+
+/* แก้ฟอนต์ใน select2 ให้เอาของ project มาใช้ */
 .select2-container .select2-search--inline .select2-search__field {
     font-family: unset;
 }
@@ -37,9 +47,6 @@ input.ew-page-no {
   color: unset;
 }
 
-.ew-grid-upper-panel, .ew-grid-lower-panel {
-  padding: 0px !important;
-}
-.ew-pager-form, .ew-list-other-options, .ew-add-edit-option, .ew-detail-option, .ew-action-option {
-  margin: 5px;
-}
+/*BEGIN_PROJECT_STYLES*/
+
+/*END_PROJECT_STYLES*/
